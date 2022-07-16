@@ -1,0 +1,102 @@
+.left {
+    width: 50vw;
+    position: relative;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+
+    position:sticky;
+
+    background-color: var(--primary-color);
+    color: var(--fonts-color-light);
+
+    width: 100%;
+    height: auto;
+
+    max-width: 900px;
+    max-height: 900px;
+    min-height: 400px;
+
+    border-radius: 25px;
+    padding: 0 40px;
+
+    margin-top: 230px;
+    margin-left: 60px;
+   
+    font-family: 'Poppins', sans-serif;
+}
+
+.about p {
+    padding: 30px;
+    font-size: 1.25rem;
+}
+
+.about h1 {
+    margin-top: 20px;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+body {
+    background-image: url("../assets/sobreImage.jpg");
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        width: auto;
+        min-width: 380px;
+
+        margin-top: 50px;
+        margin-left: 80px;
+        margin-right: 50px;
+    }
+
+    .about p {
+        padding-top: 13px;
+        font-size: 1.2rem;
+    }
+
+    .about h1 {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        height: 600px;
+        width: 350px;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+  
+}
+
+@media only screen and (max-width: 450px) {
+    .about {
+        height: 490px;
+        width: 240px;
+        
+        margin-left: 18px;
+        min-width: 340px;
+    }
+    .about p {
+        font-size: 0.9rem;
+        padding: 20px;
+    }
+
+    .about h1 {
+        font-size: 1.9rem;
+    }
+
+}

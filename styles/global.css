@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #cf5c5c;
+    --secondary-color: #ee1515;
+    
+    --fonts-color-light: #ffffff;
+    --fonts-color-dark: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+}

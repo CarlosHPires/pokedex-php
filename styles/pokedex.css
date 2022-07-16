@@ -1,0 +1,208 @@
+.center {
+    display: flex;
+}
+
+.left {
+    width: 50vw;
+    position: relative;
+}
+
+.right {
+    width: 50vw;
+}
+.right img {
+    float: right;
+    margin-right: 285px;
+    position: static;
+}
+
+.register-pokemon-form h1 {
+    border-bottom: 1px solid var(--fonts-color-dark);
+    text-align: center;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+
+    padding: 0 0 20px 0;
+
+    margin-top: 15px;
+}
+
+.register-pokemon-form {
+    font-family: 'Poppins', sans-serif;
+    height: 540px;
+    width: 400px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    background: #FFFAFA;
+    color: #222224;
+
+    border-radius: 10px;
+    padding: 0 40px;
+
+    margin-top: -55px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+.register-pokemon-form form {
+    margin: 30px 0;
+}
+
+form input {
+    position: relative;
+    background: transparent;
+    
+    width: 100%;
+    height: 40px;
+    
+    padding: 0 5px;
+    font-size: 1rem;
+
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #adadad;
+}
+
+form input:focus {
+    border-color: var(--primary-color);
+}
+
+input:focus::placeholder{
+    color: transparent;
+
+}
+form label {
+    top: 50%;
+    left: 5px;
+
+    color: var(--fonts-color-dark);
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+
+input[type='file'] {
+    display: none;
+
+}
+
+#pokeballLabel {
+    margin-top: 68px;
+    margin-left: -40px;
+}
+
+#pokeball {
+    width: 150px;
+    height: 100px;
+
+    margin: 0;
+    margin-top: 10px;
+    margin-left: -50px;
+
+    padding: 0;
+    display: block;
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+#pokeball:hover {
+    opacity: 80%;
+    transform: translateX(0px) translateY(25px);
+}
+
+.image {
+    display: flex;
+    position: sticky;
+}
+
+.form-buton {
+    width: 150px;
+    height: 65px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.25;
+
+    margin-left: 6px;
+    margin-top: 15px;
+
+    border-radius: 10px;
+    border-style: none;
+
+    background-color: var(--secondary-color);
+    color: var(--fonts-color-light);
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+.form-buton:hover {
+    background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .register-pokemon-form {
+        width: auto;
+        height: 520px;
+        min-width: 380px;
+
+        margin-left: 180px;
+        margin-right: 50px;
+    }
+
+    .register-pokemon-form h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .form-buton {
+        width: 140px;
+        height: 50;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .register-pokemon-form {
+        width: 350px;
+        height: 520px;
+        margin-left: 150px;
+    }
+
+    .register-pokemon-form h1 {
+        font-size: 1.3rem;
+
+    }
+
+    .form-buton {
+        width: 120px;
+        height: 35;
+        margin-left: 18px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .register-pokemon-form {
+        width: 240px;
+        height: 520px;
+        
+        margin-left: 92px;
+        min-width: 340px;
+        margin-top: -170px;
+    }
+
+    .register-pokemon-form h1 {
+        font-size: 1.3rem;
+
+    }
+
+    .form-buton {
+        width: 105px;
+        height: 35;
+        margin-left: 15px;
+    }
+}

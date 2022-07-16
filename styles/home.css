@@ -1,0 +1,142 @@
+.content {
+    margin-bottom: 48px;
+}
+
+.primary-content {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.primary-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.primary-content-title {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: var(--fonts-color-dark);
+}
+
+.primary-content-second-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--fonts-color-dark);
+}
+
+#primary-content-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+
+    width: 180px;
+    height: 60px;
+
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    color: var(--fonts-color-light);
+
+    border-radius: 20px;
+    border: none;
+    cursor:pointer;
+    transition: 0.4s ease-out;
+}
+
+#primary-content-button:hover {
+    background-color: var(--primary-color);
+}
+
+.primary-content-image {
+    max-height: 669px;
+    max-width: 740px;
+
+    height: auto;
+    width: 100%;
+
+    display: flex;
+}
+
+.secondary-content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 10px;
+}
+
+.secondary-content-title {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    border-top: 1.8px solid var(--fonts-color-light);
+    padding-top: 28px;
+    border-radius: 1px;
+
+    margin-bottom: 16px;
+}
+
+.secondary-content-paragraph {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: black;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .primary-content-image {
+        display: none;
+    }
+
+    #primary-content-button {
+        margin-bottom: 70px;
+    }
+
+    .primary-content {
+        margin-top: 200px;
+        margin-bottom: -20px;
+    }
+    
+
+    #primary-content-button {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondary-content {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+   .primary-content {
+        margin-left: 50px;
+   }
+
+   .primary-content-title {
+        margin-top: -190px;
+   }
+
+   #primary-content-button {
+        margin-bottom: -20px;
+   }
+
+   .secondary-content p:nth-child(3) {
+    margin-left: 20px;
+   }
+
+   .secondary-content p:nth-child(4) {
+    margin-left: 20px;
+   }
+
+   .primary-content-title {
+    font-size: 3.4rem;
+   }
+} 
