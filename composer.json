@@ -1,0 +1,29 @@
+{
+    "name": "vendor/crudphp",
+    "description": "Project using the MVC software architecture pattern",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Crudphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "CarlosPires",
+            "email": "carlospires.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php":">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\":"app/",
+            "core\\":"core/"
+        },
+        "files": [
+            "config/config.php"
+        ]
+    }
+}
