@@ -42,7 +42,7 @@
 }
 
 body {
-    background-image: url("../assets/sobreImage.jpg");
+    background-image: url("../assets/aboutImage.jpg");
 }
 
 @media only screen and (max-width: 768px) {
